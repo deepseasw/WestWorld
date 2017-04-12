@@ -10,6 +10,21 @@
       <Platform>Win32</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Src\BaseGameEntity.h" />
+    <ClInclude Include="Src\ConsoleUtils.h" />
+    <ClInclude Include="Src\EntityNames.h" />
+    <ClInclude Include="Src\Locations.h" />
+    <ClInclude Include="Src\Miner.h" />
+    <ClInclude Include="Src\MinerOwnedStates.h" />
+    <ClInclude Include="Src\State.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Src\BaseGameEntity.cpp" />
+    <ClCompile Include="Src\main.cpp" />
+    <ClCompile Include="Src\Miner.cpp" />
+    <ClCompile Include="Src\MinerOwnedStates.cpp" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <SccProjectName />
     <SccLocalPath />
@@ -116,21 +131,6 @@
       <AdditionalDependencies>odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="BaseGameEntity.cpp" />
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="Miner.cpp" />
-    <ClCompile Include="MinerOwnedStates.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="BaseGameEntity.h" />
-    <ClInclude Include="ConsoleUtils.h" />
-    <ClInclude Include="EntityNames.h" />
-    <ClInclude Include="Locations.h" />
-    <ClInclude Include="Miner.h" />
-    <ClInclude Include="MinerOwnedStates.h" />
-    <ClInclude Include="State.h" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
